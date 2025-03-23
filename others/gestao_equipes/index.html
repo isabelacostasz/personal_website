@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Gestão de Equipes</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="index.html">
+                        <h1 style='font-family:  "Lucida Console", "Courier New", monospace; color: rgb(221, 220, 226); margin-top: 10px; font-size: 25px;'>
+                            Gestão de Equipes
+                        </h1>
+                    </a>
+                </div>
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li class="current"><a href="index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a title="">Categorias</a>
+                        <ul class="sub-menu">
+                            <li><a onClick="select_category('UFMG')" class="category-filter" style="cursor: pointer;">UFMG</a></li>
+                            <li><a onClick="select_category('Vlog')" class="category-filter" style="cursor: pointer;">Vlogs</a></li>
+                            <li><a onClick="select_category('Diversos')" class="category-filter" style="cursor: pointer;">Diversos</a></li>
+                            <li><a onClick="select_category('Todos')" class="category-filter" style="cursor: pointer;">Todos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="page-about.html" title="">Sobre</a></li>
+                </ul> <!-- end header__nav -->
+
+            </nav> <!-- end header__nav-wrap -->
+
+            <!-- menu toggle -->
+            <a class="header__menu-toggle">
+                <span>Menu</span>
+            </a>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- search
+        ================================================== -->
+        <div class="s-search">
+
+            <div class="search-block">
+    
+                <form role="search" method="get" class="search-form" action="#">
+                    <label>
+                        <span class="hide-content">Pesquisar por:</span>
+                        <input type="search" class="search-field" placeholder="Palavra-chave" value="" name="s" title="Pesquisar por:" autocomplete="off">
+                    </label>
+                    <input type="submit" class="search-submit" value="Pesquisar">
+                </form>
+    
+                <a title="Fechar Pesquisa" class="search-close">Fechar</a>
+    
+            </div>  <!-- end search-block -->
+
+            <!-- search modal trigger -->
+            <a class="search-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z"></path></svg>
+                <span>Pesquisar</span>
+            </a>
+            <span class="search-line"></span>
+
+        </div> <!-- end s-search -->
+
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content">
+            
+            <div class="masonry-wrap">
+
+                <div class="masonry">
+    
+                    <div class="grid-sizer"></div>
+
+                    <div id="article_div"></div>
+    
+                    <h2 id="no-content" style='display: none; font-family: "Lucida Console", "Courier New", monospace; text-align: center;'>Nenhum conteúdo encontrado</h2>
+
+                    <article class="masonry__brick entry format-standard animate-this">
+                            
+                        <div class="entry__thumb">
+                            <a href="posts/post-01.html" class="entry__thumb-link">
+                                <img src="images/thumbs/posts/post1-600.jpg" 
+                                        srcset="images/thumbs/posts/post1-600.jpg 1x, images/thumbs/posts/post1-1200.jpg 2x" alt="">
+                            </a>
+                        </div>
+        
+                        <div class="entry__text">
+                            <div class="entry__header">
+    
+                                <h2 class="entry__title"><a href="posts/post-01.html">Trabalhando e estudando.</a></h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-cat">
+                                        <a>UFMG</a>
+                                        <a>Diversos</a>
+                                    </span>
+                                    <span class="entry__meta-date">
+                                        <a href="posts/post-01.html">Nov 17, 2022</a>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Às vezes achamos que somos tão diferentes das outras pessoas ao nosso redor que nos colocamos em uma posição de criar soluções para problemas que em tese seriam só nossos...
+                                </p>
+                            </div>
+                        </div>
+        
+                    </article>
+
+                    <article class="masonry__brick entry format-standard animate-this" style="margin-top: 0px !important;">
+                            
+                        <div class="entry__thumb">
+                            <a href="posts/post-02.html" class="entry__thumb-link">
+                                <img src="images/thumbs/posts/post2-600.jpg" 
+                                        srcset="images/thumbs/posts/post2-600.jpg 1x, images/thumbs/posts/post2-1200.jpg 2x" alt="">
+                            </a>
+                        </div>
+        
+                        <div class="entry__text">
+                            <div class="entry__header">
+    
+                                <h2 class="entry__title"><a href="posts/post-02.html">Walking in UFMG - FAFICH.</a></h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-cat">
+                                        <a>UFMG</a>
+                                        <a>Vlog</a>
+                                    </span>
+                                    <span class="entry__meta-date">
+                                        <a href="posts/post-02.html">Nov 22, 2022</a>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Começando o primeiro post da serie Walking in UFMG, que tem como intuito mostrar como os espaços presentes na universidade. Isso pode ajudar a pessoas conhecerem e matarem...
+                                </p>
+                            </div>
+                        </div>
+        
+                    </article>
+
+                    <article class="masonry__brick entry format-standard animate-this" style="margin-top: 0px !important;">
+                            
+                        <div class="entry__thumb">
+                            <a href="posts/post-03.html" class="entry__thumb-link">
+                                <img src="images/thumbs/posts/post3-600.jpg" 
+                                        srcset="images/thumbs/posts/post3-600.jpg 1x, images/thumbs/posts/post3-1200.jpg 2x" alt="">
+                            </a>
+                        </div>
+        
+                        <div class="entry__text">
+                            <div class="entry__header">
+    
+                                <h2 class="entry__title"><a href="posts/post-03.html">O currículo perfeito.</a></h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-cat">
+                                        <a>Diversos</a>
+                                    </span>
+                                    <span class="entry__meta-date">
+                                        <a href="posts/post-03.html">Nov 24, 2022</a>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Entrando na faculdade, pra maioria existe a expectativa e perspectiva de um estágio ou primeiro emprego no meio ou final do curso, mas quanto mais perto se chega dessa época...
+                                </p>
+                            </div>
+                        </div>
+        
+                    </article>
+
+                    <article class="masonry__brick entry format-standard animate-this" style="margin-top: 0px !important;">
+                            
+                        <div class="entry__thumb">
+                            <a href="posts/post-04.html" class="entry__thumb-link">
+                                <img src="images/thumbs/posts/post4-600.jpg" 
+                                        srcset="images/thumbs/posts/post4-600.jpg 1x, images/thumbs/posts/post4-1200.jpg 2x" alt="">
+                            </a>
+                        </div>
+        
+                        <div class="entry__text">
+                            <div class="entry__header">
+    
+                                <h2 class="entry__title"><a href="posts/post-04.html">BH, cheguei!</a></h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-cat">
+                                        <a>UFMG</a>
+                                        <a>Diversos</a>
+                                    </span>
+                                    <span class="entry__meta-date">
+                                        <a href="posts/post-04.html">Nov 29, 2022</a>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Felizmente, a UFMG está constantemente crescendo nos últimos anos, tanto em seu número de alunos, prédios e instituições internas, quanto em renome e respeito no cenário acadêmico...
+                                </p>
+                            </div>
+                        </div>
+        
+                    </article>
+
+                </div> <!-- end masonry -->
+
+            </div> <!-- end masonry-wrap -->
+
+        </div> <!-- end s-content -->
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>

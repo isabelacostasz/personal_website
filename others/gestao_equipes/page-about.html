@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Gestão de Equipes</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body class="ss-bg-white">
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="index.html">
+                        <h1 style='font-family:  "Lucida Console", "Courier New", monospace; color: rgb(221, 220, 226); margin-top: 10px; font-size: 25px;'>
+                            Gestão de Equipes
+                        </h1>
+                    </a>
+                </div>
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li><a href="index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a title="">Categorias</a>
+                        <ul class="sub-menu">
+                            <li><a onClick="select_category('UFMG')" class="category-filter" style="cursor: pointer;">UFMG</a></li>
+                            <li><a onClick="select_category('Vlog')" class="category-filter" style="cursor: pointer;">Vlogs</a></li>
+                            <li><a onClick="select_category('Diversos')" class="category-filter" style="cursor: pointer;">Diversos</a></li>
+                            <li><a onClick="select_category('Todos')" class="category-filter" style="cursor: pointer;">Todos</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="page-about.html" title="">Sobre</a></li>
+                </ul> <!-- end header__nav -->
+
+            </nav> <!-- end header__nav-wrap -->
+
+            <!-- menu toggle -->
+            <a class="header__menu-toggle">
+                <span>Menu</span>
+            </a>
+
+        </header> <!-- end s-header -->
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content content">
+            <main class="row content__page">
+                
+                <section class="column large-full entry format-standard">
+
+                    <div class="media-wrap">
+                        <div>
+                            <img src="images/thumbs/about/about-1000.jpg" srcset="images/thumbs/about/about-2000.jpg 2000w, 
+                                      images/thumbs/about/about-1000.jpg 1000w, 
+                                      images/thumbs/about/about-500.jpg 500w" sizes="(max-width: 2000px) 100vw, 2000px" alt="">
+                        </div>
+                    </div>
+
+                    <p class="lead drop-cap">
+                    Este website é um trabalho final para a disciplina de Gestão de Equipes, na UFMG.
+                    Aqui serão postados diversos artigos de autorias e temas variados, mas com um
+                    objetivo comum: compartilhar e armazenar experiências de vida, sejam elas dentro
+                    ou fora da instituição de ensino que propôs tal projeto.
+                    </p>
+
+                    <hr>
+
+                    <div class="row block-large-1-2 block-tab-full">
+                        <div class="column">
+                            <h4>Quem somos nós</h4>
+                            <p>Nosso grupo singular e bastante aleatório de alunos reunidos para postar neste blog é composto por cinco integrantes: Augusto, Eduardo, Isabela, João e Raphael. No começo do segundo semestre letivo na UFMG, nosso grupo entrou na disciplina de Gestão de Equipes e pelo professor responsável fomos reunidos como uma equipe. A partir disso, em todas as aulas fazíamos um check-in juntos e começamos a nos preparar para fazer um projeto final para a matéria, que acabou se tornando esta plataforma.</p>
+                        </div>
+
+                        <div class="column">
+                            <h4>Nosso objetivo</h4>
+                            <p>A ideia por trás das postagens feitas aqui, sendo elas vídeo ou textos, é compartilhar. Este compartilhamento, claro, pode ser direcionado para alunos da UFMG passando por experiências similares ou até iguais as que cada artigo retrata; Pode este ser também voltado a vestibulandos querendo aprender um pouco mais sobre a vida de um aluno da federal. Mas acima de tudo, queremos compartilhar com nós mesmos, no futuro, como nos sentíamos e vivíamos nessa época de nossas vidas, como uma espécie de diário.</p>
+                        </div>
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div> <!-- end s-content -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>

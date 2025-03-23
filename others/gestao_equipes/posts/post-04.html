@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Gestão de Equipes</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="../js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+
+</head>
+
+<body class="ss-bg-white">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="../index.html">
+                        <h1 style='font-family:  "Lucida Console", "Courier New", monospace; color: rgb(221, 220, 226); margin-top: 10px; font-size: 25px;'>
+                            Gestão de Equipes
+                        </h1>
+                    </a>
+                </div>
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li><a href="../index.html" title="">Home</a></li>
+                    <li class="has-children">
+                        <a title="">Categorias</a>
+                        <ul class="sub-menu">
+                            <li><a onClick="select_category('UFMG')" class="category-filter" style="cursor: pointer;">UFMG</a></li>
+                            <li><a onClick="select_category('Vlog')" class="category-filter" style="cursor: pointer;">Vlogs</a></li>
+                            <li><a onClick="select_category('Diversos')" class="category-filter" style="cursor: pointer;">Diversos</a></li>
+                            <li><a onClick="select_category('Todos')" class="category-filter" style="cursor: pointer;">Todos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../page-about.html" title="">Sobre</a></li>
+                </ul> <!-- end header__nav -->
+
+            </nav> <!-- end header__nav-wrap -->
+
+            <!-- menu toggle -->
+            <a class="header__menu-toggle">
+                <span>Menu</span>
+            </a>
+
+        </header> <!-- end s-header -->
+
+        <!-- site content
+        ================================================== -->
+        <div class="s-content content">
+            <main class="row content__page">
+                
+                <article class="column large-full entry format-standard">
+
+                    <div class="content__page-header entry__header">
+                        <h1 class="display-1 entry__title">
+                            BH, cheguei!
+                        </h1>
+                        <ul class="entry__header-meta">
+                            <li class="author">Por <a>Augusto</a></li>
+                            <li class="date">29 Novembro, 2022</li>
+                            <li class="cat-links">
+                                <a>Diversos</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end entry__header -->
+
+                    <div class="entry__content">
+
+                        <p class="lead drop-cap">
+                            Felizmente, a UFMG está constantemente crescendo nos últimos anos, tanto
+                            em seu número de alunos, prédios e instituições internas, quanto em renome e
+                            respeito no cenário acadêmico. Não à toa, cada dia mais as palavras “Universidade
+                            Federal de Minas Gerais” em um currículo atrai olhares. O que é uma notícia boa
+                            para seus alunos é, também, um desafio para os vestibulandos que concorrem com
+                            mais pessoas em busca de uma vaga no seu curso dos sonhos. Vagas que antes
+                            competiam praticamente só a jovens de Belo Horizonte, agora são almejadas por
+                            pessoas de várias cidades que já estão sonhando com o desembarque na capital
+                            mineira.                          
+                        </p>
+
+                        <p>
+                            Quem chegar em BH desavisado pode se surpreender, mas é fácil perceber
+                            logo que a cultura de repúblicas e comunidades em volta da universidade não é tão
+                            forte aqui como por exemplo em cidades universitárias, citando aqui nomes fortes
+                            como Ouro Preto e Lavras. Ainda sim, você provavelmente vai conhecer alguém
+                            que divide apartamento com alguns colegas. Esse recurso certamente será um dos
+                            caminhos a se explorar chegando aqui, já que os preços de aluguéis em uma cidade
+                            tão grande podem esgotar rapidinho o bolso do universitário. Vale sempre a pena
+                            conversar com seus colegas, veteranos e calouros, para achar um teto e chamá-lo
+                            de seu pelo menos enquanto você se estabelece.
+                        </p>
+
+                        <p>
+                            Outra confusão comum é sobre: onde fica a UFMG? Geralmente as pessoas
+                            (e até o Google, se você pesquisar aí agora o endereço da universidade)
+                            responderão com o endereço do campus Pampulha, maior e principal, que é lar da
+                            grande maioria dos cursos de graduação e pós. Citando somente alguns, os cursos
+                            das áreas de Humanas, Ciências Econômicas, Ciências Exatas, Computação e
+                            Engenharias estão no campus principal, que fica ao lado do Mineirão e da Lagoa da
+                            Pampulha. Já para o centro da cidade, você pode encontrar alunos de medicina,
+                            enfermagem e outros cursos tendo aulas no Campus Saude, na região hospital,
+                            alunos de Direito e Ciências do Estado bem pertinho do Parque Municipal, no prédio
+                            de Direito, e os alunos de Arquitetura e Urbanismo no conhecido bairro da Savassi.
+                        </p>
+
+                        <p>
+                            Se suas aulas forem no campus Pampulha, tenha em mente que ele é bem
+                            grande. Uma caminhada de uma ponta a outra pode levar facilmente mais de meia
+                            hora, portanto tente encontrar meios de chegar no seu prédio de forma mais fácil.
+                            Algumas linhas de ônibus, em especial 5102, s50 e 9502, passam dentro do
+                            campus. Está na rotina de muitos alunos a famosa carona, existindo grupos nas
+                            redes sociais específicos para caronas entre os alunos da UFMG, então busque
+                            conhecer alunos na sua região para se familiarizar e conseguir caronas, para
+                            economizar tempo, ou oferecer caronas, para economizar no custo do transporte.
+                            Procurando bairros na região para encontrar o seu cafofo, os mais recomendados
+                            que equilibram custo e proximidade são Jaraguá, Liberdade, Santa Rosa e
+                            arredores, próximos à Antônio Carlos, bem como Ouro Preto e Engenho Nogueira
+                            mais próximos à avenida Carlos Luz.
+                        </p>
+    
+                        <p>
+                            Os campi (plural de campus) da região central carecem um pouco de
+                            caronas, pois em alguns locais achar vagas de estacionamento é difícil ou muito
+                            caro. No entanto, o acesso de transporte público para a região oferece uma gama
+                            de ônibus muito mais elevada, abraçando inclusive a região metropolitana. Nesse
+                            caso, se estiver vindo para Belo Horizonte e ainda não escolheu um lugar para ficar,
+                            os bairros dos bairros Savassi e Centro podem te apresentar o melhor
+                            custo/benefício.
+                        </p>
+
+                        <p>
+                            Independente de onde você ficar, não esqueça de aproveitar os descansos
+                            dentro e fora dos semestres para: caminhar na lagoa da Pampulha, vivenciar a vida
+                            boêmia da Savassi, os museus da Praça da Liberdade, os parques. Enfim, seja bem
+                            vinda a Belô!
+                        </p>
+        
+                        <p class="entry__tags">
+                            <span>Tags</span>
+        
+                            <span class="entry__tag-list">
+                                <a>UFMG</a>
+                                <a>Diversos</a>
+                            </span>
+            
+                        </p>
+                    </div> <!-- end entry content -->
+
+                    <div class="entry__pagenav">
+                        <div class="entry__nav">
+                            <div class="entry__prev">
+                                <a href="post-03.html" rel="prev">
+                                    <span>Post Anterior</span>
+                                    O currículo perfeito
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="entry__next">
+                            <a href="post-05.html" rel="next">
+                                <span>Próximo Post</span>
+                                titulo
+                            </a>
+                        </div> -->
+                    </div> <!-- end entry__pagenav -->
+
+                </article> <!-- end column large-full entry-->
+
+            </main>
+
+        </div> <!-- end s-content -->
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
